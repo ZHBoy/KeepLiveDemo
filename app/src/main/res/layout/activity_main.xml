@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/joinWhiteOsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="加入系统白名单"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="从 Android 6.0 开始，系统为了省电增加了休眠模式，系统待机一段时间后，会杀死后台正在运行的进程。但系统会有一个后台运行白名单，白名单里的应用将不会受到影响，在原生系统下，通过：「设置」 - 「电池」 - 「电池优化」 - 「未优化应用」，可以看到这个白名单。"
+        android:textColor="#666"
+        android:lineSpacingExtra="2dp"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/allowBackRunBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="加入厂商系统白名单"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:lineSpacingExtra="2dp"
+        android:text="几乎各个厂商都有自己的后台管理，就算应用加入了后台运行白名单，仍然可能会被厂商自己的后台管理干掉。如果能把应用加入厂商系统的后台管理白名单，可以进一步降低进程被杀的概率。"
+        android:textColor="#666"
+        android:textSize="14dp" />
+
+</LinearLayout>
